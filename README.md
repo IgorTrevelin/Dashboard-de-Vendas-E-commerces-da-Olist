@@ -37,17 +37,17 @@ Inicie o contêiner do Microsoft SQL Server com Docker:
 docker compose up -d
 ```
 
-Execute o script schema.sql (isso pode levar alguns minutos):
-
-```bash
-sqlcmd -S 127.0.0.1 -U sa -P MSSQL_Docker -i schema.sql
-```
-
 Instale as dependências de pacotes Python com _pip_ e execute o script _data_prep.py_:
 
 ```bash
 pip install -r requirements.txt
 python data_prep.py
+```
+
+Execute o script schema.sql (isso pode levar alguns minutos):
+
+```bash
+sqlcmd -S 127.0.0.1 -U sa -P MSSQL_Docker -i schema.sql
 ```
 
 Pronto! Agora todos os dados utilizados nos dashboards já estão no banco de dados (tabelas TB_ACT\_\*).
