@@ -112,7 +112,7 @@ SELECT
     payment_sequential,
     payment_type,
     payment_installments,
-    payment_value
+    payment_value / 100
 FROM dbo.TB_CG_ORDER_PAYMENTS;
 
 INSERT INTO dbo.TB_ACT_ORDER_REVIEW (
