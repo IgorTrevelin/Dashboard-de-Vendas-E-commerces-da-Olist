@@ -2,11 +2,9 @@ version: "3.9"
 services:
   mssql:
     image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=MSSQL_Docker
     ports:
       - 1433:1433
-    volumes:
-      - ./data:/var/opt/mssql/data
-      - ./logs:/var/opt/mssql/log

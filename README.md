@@ -23,13 +23,6 @@ Acesse o diretório raiz do projeto:
 cd Dashboard-de-Vendas-E-commerces-da-Olist
 ```
 
-Crie as pastas **data/** e **logs/** dentro da raiz do projeto para persistência do banco de dados:
-
-```bash
-mkdir data
-mkdir logs
-```
-
 Inicie o contêiner do Microsoft SQL Server com Docker:
 
 ```bash
